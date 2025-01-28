@@ -1,9 +1,9 @@
 body {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: space-between; /* Space between content ensures proper placement */
+    flex-direction: column; 
+    justify-content: space-between; 
     align-items: center;
-    min-height: 100vh; /* Make the body cover the full viewport height */
+    min-height: 100vh; 
     margin: 0;
     background: url(../img/back.jpg) no-repeat;
     background-size: cover;
@@ -21,7 +21,7 @@ body {
     text-align: center;
     width: 90%;
     max-width: 400px;
-    margin: auto; /* Centers the clock-container vertically when space allows */
+    margin: auto; 
 }
 
 .clock {
@@ -48,9 +48,9 @@ select {
 .footer {
     background-color: #000;
     text-align: center;
-    width: 100%; /* Full width of the viewport */
+    width: 100%; 
     padding: 20px;
-    position: relative; /* Keeps it in normal flow */
+    position: relative; 
     bottom: 0;
 }
 

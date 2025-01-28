@@ -28,8 +28,8 @@ function populateTimezones() {
    
    timezones.forEach(tz => {
        const option = document.createElement('option');
-       option.value = tz.offset; // Store the offset
-       option.textContent = tz.name; // Display the timezone name
+       option.value = tz.offset; 
+       option.textContent = tz.name; 
        timezoneSelect.appendChild(option);
    });
 }
@@ -39,13 +39,13 @@ function updateTime() {
    
    const now = new Date();
    
-   // Create a new date object in UTC
+   
    const utcTime = new Date(now.toISOString());
    
-   // Calculate local time based on selected timezone
+  
    const localTime = new Date(utcTime.getTime() + timezoneOffset * 3600000);
    
-   // Format hours, minutes, and seconds for 12-hour format
+   
    let hours = localTime.getUTCHours();
    const minutes = String(localTime.getUTCMinutes()).padStart(2, '0');
    const seconds = String(localTime.getUTCSeconds()).padStart(2, '0');
@@ -66,8 +66,8 @@ function updateTime() {
    document.getElementById('date').innerHTML = formatter.format(localTime);
 }
 
-// Initial setup
+
 populateTimezones();
-document.getElementById('timezone').value = -6; // Default to CST
+document.getElementById('timezone').value = -6; 
 updateTime();
 setInterval(updateTime, 1000);
