@@ -1,1 +1,1 @@
-# Digital-Clock
+# Digital-Clock with Coordinated Universal Time
