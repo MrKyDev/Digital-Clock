@@ -1,1 +1,1 @@
-# Digital-Clock with CUT
+# Digital-Clock
